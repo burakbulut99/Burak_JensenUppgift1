@@ -1,0 +1,151 @@
+About the program
+The calculation program helps user to get the birth year result with providing name and age credentials. To be able
+to get the result in requested way, user needs to match the requirements regarding demanded information's. Both name and age should
+be written in the right format. A name can only contain either upper or lower cases where null, "", special
+characters and numbers are prohibited to enter. Likewise, age field can only consist of numbers. Any numbers which are
+out boundaries such as 0, 200, 201 and negative numbers are not acceptable for as an input. If users entry does not
+match with the rules, program will help them by showing the clear error message.
+
+User Stories
+Test process regarding Age Calculation Program has 4 user stories which covers all valid and invalid scenarios.
+Probability of entering different inputs are executed in 22 test cases by providing either correct or faulty information's.
+
+Test Cases
+There are totally 10 test cases that deals with several scenarios. Each case has it's own test steps and expected
+result which we can compare with the actual results that we receive at the end of executions.
+
+User Story 1- User should be able to see the calculation result with providing valid name and valid age information.
+Test Case 1
+Test steps
+- Write “Anna” to the name field
+- Write "32" to the age field
+Expected result: User can verify the calculation result of name and birth year in expected format.
+
+Test Case 2
+Test steps
+- Write “Mike” to the name field
+- Write "63" to the age field
+Expected result: User can verify the calculation result of name and birth year in expected format.
+
+Test Case 3
+Test steps
+- Write “    Annelie” to the name field
+- Write "19" to the age field
+Expected result: User can verify the calculation result of name and birth year in expected format.
+
+Test Case 4
+Test steps
+- Write “  Mona    ” to the name field
+- Write "22" to the age field
+Expected result: User can verify the calculation result of name and birth year in expected format.
+
+Test Case 5
+Test steps
+- Write “Per Ulf” to the name field
+- Write "43" to the age field
+Expected result: User can verify the calculation result of name and birth year in expected format.
+
+Test Case 6
+Test steps
+- Write “Sana” to the name field
+- Write "     33" to the age field
+Expected result: User can verify the calculation result of name and birth year in expected format.
+
+Test Case 7
+Test steps
+- Write “   Gustaf Kung  ” to the name field
+- Write "  153  " to the age field
+Expected result: User can verify the calculation result of name and birth year in expected format.
+
+User Story 2- User should not be able to see the calculation result with providing valid name and invalid age information.
+Test Case 1
+Test steps
+- Write “John” to the name field
+- Write "0" to the age field
+Expected result: User can verify the error message “Age is invalid” is shown.
+
+Test Case 2
+Test steps
+- Write “Adam” to the name field
+- Write "-1" to the age field
+Expected result: User can verify the error message “Age is invalid” is shown.
+
+Test Case 3
+Test steps
+- Write “Annie” to the name field
+- Write "200" to the age field
+Expected result: User can verify the error message “Age is invalid” is shown.
+
+Test Case 4
+Test steps
+- Write “Axel” to the name field
+- Write "" to the age field
+Expected result: User can verify the error message “Age is invalid” is shown.
+
+Test Case 5
+Test steps
+- Write “Erik” to the name field
+- Write "abc" to the age field
+Expected result: User can verify the error message “Age is invalid” is shown.
+
+Test Case 6
+Test steps
+- Write “Keith” to the name field
+- Write "?!.,;" to the age field
+Expected result: User can verify the error message “Age is invalid” is shown.
+
+User Story 3- User should not be able to see the calculation result with providing invalid name and valid age information.
+Test Case 1
+Test steps
+- Write “” to the name field
+- Write "44" to the age field
+Expected result: User can verify the error message “Name is invalid” is shown.
+
+Test Case 2
+Test steps
+- Write null to the name field
+- Write "55" to the age field
+Expected result: User can verify the error message “Name is invalid” is shown.
+
+Test Case 3
+Test steps
+- Write “03389” to the name field
+- Write "11" to the age field
+Expected result: User can verify the error message “Name is invalid” is shown.
+
+Test Case 4
+Test steps
+- Write "Ande34r78s" to the name field
+- Write "21" to the age field
+Expected result: User can verify the error message “Name is invalid” is shown.
+
+User Story 4- User should not be able to see the result calculation with providing invalid name and invalid age information.
+Test Case 1
+Test steps
+- Write "A8b2m9” to the name field
+- Write 0 to the age field
+Expected result: User can verify the error message “Both age and name is invalid” is shown.
+
+Test Case 2
+Test steps
+- Write “” to the name field
+- Write 200 to the age field
+Expected result: User can verify the error message “Both age and name is invalid” is shown.
+
+Test Case 3
+Test steps
+- Write null to the name field
+- Write 201 to the age field
+Expected result: User can verify the error message “Both age and name is invalid” is shown.
+
+Test Case 4
+Test steps
+- Write "201" to the name field
+- Write "abc13" to the age field
+Expected result: User can verify the error message “Both age and name is invalid” is shown.
+
+Test Case 5
+Test steps
+- Write "" to the name field
+- Write "" to the age field
+Expected result: User can verify the error message “Both age and name is invalid” is shown.
